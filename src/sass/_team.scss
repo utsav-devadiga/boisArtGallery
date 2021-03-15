@@ -1,0 +1,133 @@
+.team {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(250px, 1fr));
+}
+.team-item {
+	height: 500px;
+	//width: 500px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.team-item-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../../images/team/team.jpg);
+}
+.team-head {
+	width: 300px;
+	height: 100px;
+	text-transform: uppercase;
+	border: 10px solid #000;
+	h2 {
+		text-align: center;
+		font-size: 2em;
+		margin: 22px 0;
+	}
+}
+.team-item-2 {
+	background-image: url(../../images/team/corey.jpg);
+	transition: 0.5s;
+	&:hover {
+		cursor: pointer;
+		filter: contrast(150%);
+		transition: 0.5s;
+	}
+}
+.team-item-3, .team-item-5, .team-item-6 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	padding: 10px;
+	background-color: #ccc8b6;
+}
+.team-item-4 {
+	background-image: url(../../images/team/kat.jpg);
+	transition: 0.5s;
+	&:hover {
+		cursor: pointer;
+		filter: contrast(150%);
+		transition: 0.5s;
+	}
+}
+.about-team {
+	max-width: 400px;
+	h2 {
+		margin-bottom: 50px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	p {
+		margin-bottom: 45px;
+	}
+}
+.social {
+	display: flex;
+	justify-content: space-between;
+	font-size: 36px;
+}
+.team-item-6 {
+	background-color: #f2efe5;
+}
+.pointer {
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 110px;
+	left: -20px;
+	transform: rotate(45deg);
+	background-color: #ccc8b6;
+}
+.subscribe {
+	p {
+		margin: 0px;
+		text-transform: uppercase;
+	}
+	p.p-first {
+		font-size: 14px;
+		font-weight: bold;
+	}
+	p.p-second {
+		font-size: 12px;
+	}
+}
+input[type="email"] {
+	padding: 16px 20px;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-top: 40px;
+	height: 40px;
+	width: 300px;
+	background-color: #f2efe5;
+	border: 1px solid #000;
+}
+input[type="button"] {
+	margin-top: 20px;
+	height: 40px;
+	width: 300px;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase;
+	background-color: #9a977a;
+
+	&:hover {
+		cursor: pointer;
+		background-color: #645E28;
+	}
+}
+
+
+//-------------------------------------------------
+// Media queries
+@media screen and (max-width: 1000px) {
+	.team {
+		grid-template-columns: repeat(2, minmax(250px, 1fr));
+	}
+}
+@media screen and (max-width: 600px) {
+	.team {
+		grid-template-columns: repeat(1, minmax(250px, 1fr));
+	}
+}

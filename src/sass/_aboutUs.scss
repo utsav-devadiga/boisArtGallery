@@ -1,0 +1,122 @@
+.about-us {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.about-us-big {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+}
+.about-us-small {
+	display: grid;
+	grid-template-columns: repeat(6, minmax(125px, 1fr));
+}
+.about-item {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
+	&:hover {
+		cursor: pointer;
+		filter: contrast(150%);
+		transition: 0.5s;
+	}
+}
+.about-item-big {
+	height: 500px;
+}
+.about-item-1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../../images/about_us/img_studio_bg.jpg);
+	&:hover {
+		cursor: pointer;
+		filter: contrast(150%);
+		transition: 0.5s;
+	}
+}
+.about-us-head {
+	width: 300px;
+	height: 100px;
+	text-transform: uppercase;
+	border: 10px solid #000;
+	h2 {
+		text-align: center;
+		font-size: 2em;
+		margin: 22px 0;
+	}
+}
+.about-item-2 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	.description {
+		max-width: 550px;
+	}
+	.tattoo-design {
+		text-align: center;
+	}
+	.cite {
+		text-align: center;
+	}
+}
+.about-item {
+	height: 250px;
+}
+.about-item-3 {
+	background-image: url(../../images/about_us/img3.jpg);
+}
+.about-item-4 {
+	background-image: url(../../images/about_us/img4.jpg);
+}
+.about-item-5 {
+	background-image: url(../../images/about_us/img5.jpg);
+}
+.about-item-6 {
+	background-image: url(../../images/about_us/img6.jpg);
+}
+.about-item-7 {
+	background-image: url(../../images/about_us/img7.jpg);
+}
+.about-item-8 {
+	background-image: url(../../images/about_us/img8.jpg);
+}
+.about-item-9 {
+	background-image: url(../../images/about_us/img9.jpg);
+}
+.about-item-10 {
+	background-image: url(../../images/about_us/img10.jpg);
+}
+.about-item-11 {
+	background-image: url(../../images/about_us/img11.jpg);
+}
+.about-item-12 {
+	background-image: url(../../images/about_us/img12.jpg);
+}
+.about-item-13 {
+	background-image: url(../../images/about_us/img13.jpg);
+}
+.about-item-14 {
+	background-image: url(../../images/about_us/img14.jpg);
+}
+
+
+//-------------------------------------------------
+// Media queries
+@media screen and (max-width: 750px) {
+	.about-us-small {
+		grid-template-columns: repeat(3, minmax(125px, 1fr));
+	}
+}
+@media screen and (max-width: 500px) {
+	.about-us-small {
+		grid-template-columns: repeat(2, minmax(125px, 1fr));
+	}
+}
+@media screen and (max-width: 375px) {
+	.about-us-big {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+}

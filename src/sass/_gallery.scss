@@ -1,0 +1,115 @@
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(5, minmax(150px, 1fr));
+}
+.gallery-head, .gallery-item {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.gallery-head {
+	grid-area: 1 / 1 / 2 / 3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background-color: #afac9c;
+}
+.gallery-head-content {
+	height: 100px;
+	text-transform: uppercase;
+	border: 10px solid #000;
+	h2 {
+		text-align: center;
+		font-size: 2em;
+		margin: 22px 0;
+	}
+}
+.gallery-item {
+	height: 300px;
+	transition: 0.5s;
+
+	&:hover {
+		cursor: pointer;
+		filter: contrast(150%);
+		transition: 0.5s;
+	}
+}
+.gallery-item-1 {
+	background-image: url(../../images/gallery/gallery1.jpg);
+}
+.gallery-item-2 {
+	background-image: url(../../images/gallery/gallery2.jpg);
+}
+.gallery-item-3 {
+	background-image: url(../../images/gallery/gallery3.jpg);
+}
+.gallery-item-4 {
+	background-image: url(../../images/gallery/gallery4.jpg);
+}
+.gallery-item-5 {
+	background-image: url(../../images/gallery/gallery5.jpg);
+}
+.gallery-item-6 {
+	background-image: url(../../images/gallery/gallery6.jpg);
+}
+.gallery-item-7 {
+	background-image: url(../../images/gallery/gallery7.jpg);
+}
+.gallery-item-8 {
+	background-image: url(../../images/gallery/gallery8.jpg);
+}
+.gallery-item-9 {
+	background-image: url(../../images/gallery/gallery9.jpg);
+}
+.gallery-item-10 {
+	background-image: url(../../images/gallery/gallery10.jpg);
+}
+.gallery-item-11 {
+	background-image: url(../../images/gallery/gallery11.jpg);
+}
+.gallery-item-12 {
+	background-image: url(../../images/gallery/gallery12.jpg);
+}
+.gallery-item-13 {
+	background-image: url(../../images/gallery/gallery13.jpg);
+}
+.gallery-item-14 {
+	background-image: url(../../images/gallery/gallery14.jpg);
+}
+.gallery-item-15 {
+	background-image: url(../../images/gallery/gallery15.jpg);
+}
+.gallery-item-16 {
+	background-image: url(../../images/gallery/gallery16.jpg);
+}
+.gallery-item-17 {
+	background-image: url(../../images/gallery/gallery17.jpg);
+}
+.gallery-item-18 {
+	background-image: url(../../images/gallery/gallery18.jpg);
+}
+
+
+//-------------------------------------------------
+// Media queries
+@media screen and (max-width: 1200px) {
+	.gallery {
+		grid-template-columns: repeat(4, minmax(150px, 1fr));
+	}
+}
+@media screen and (max-width: 900px) {
+	.gallery {
+		grid-template-columns: repeat(3, minmax(150px, 1fr));
+	}
+}
+@media screen and (max-width: 600px) {
+	.gallery {
+		grid-template-columns: repeat(2, minmax(150px, 1fr));
+	}
+}
+@media screen and (max-width: 300px) {
+	.gallery {
+		grid-template-columns: repeat(1, minmax(150px, 1fr));
+	}
+}

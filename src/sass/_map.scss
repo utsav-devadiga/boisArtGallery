@@ -1,0 +1,16 @@
+.map {
+	//width: 1500px;
+	display: grid;
+	grid-template-columns: minmax(300px, 1fr);	
+}
+
+.image {
+	height: 800px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url(../../images/map/map.jpg);
+	img {
+		width: 100%;
+	}
+}
